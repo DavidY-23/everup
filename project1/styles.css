@@ -1,0 +1,72 @@
+h2 {
+    text-align: center;
+}
+
+#things {
+    border-style: solid;
+    overflow: auto; 
+    background-color: palevioletred;
+}
+#cherry {
+    display: inline;
+    float: left;
+}
+
+#cherryblossoms {
+    overflow: auto; 
+}
+
+#akihabara {
+    position: relative;
+}
+
+#akiha {
+    display: inline;
+    float: right;
+}
+
+.figs {
+    border-style: solid;
+    border-color: pink;
+}
+
+.news {
+    font-weight: bold;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+.contactimg {
+    max-width: 5%;
+}
+
+#footer {
+    text-align: center;
+}
+
+
+#flexbox {
+    display: flex;
+    flex: 33%;
+    order: 3;
+    max-width:100%;
+ }
+
+ .fleximg {
+    float: left;
+    width: 33.33%;
+    margin: 5px;
+    border-style: solid;
+}
+
+.flextext {
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
