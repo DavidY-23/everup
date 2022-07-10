@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+    </div>
+     
+    <iframe id="block1" src="David Ye - Assignment 1.html" height="500px" width="500px"></iframe>
+
+
+    <div id="blocks">
+
+        <img id="block2" src="https://static.wikia.nocookie.net/hyouka/images/a/af/Hyouka_en.jpg/revision/latest/top-crop/width/360/height/360?cb=20210209102232">
+    
+    <div id="block3">
+        <p id="p1"><br>This is the hotpink paragraph, font family is Arial</p>
+        <p id="p2"><br>This is the pink paragraph, font family is Courier</p>
+        <p id="p3"><br>This is the lightpink paragraph, font family is Corsiva</p>
+        <br><br><br><br>
+        <p id="popupText">This is the popup text, click again to hide!</p>
+        <button onclick="myFunction()">This is a button</button>
+    </div>
+
+    <div id="footer"><br><br>Study button, input, form, and textarea elements<br><br></div>
+
+<script>
+    function myFunction() {
+        var popup = document.getElementById("popupText");
+        if (popup.style.visibility == "visible") {
+            popup.style.visibility = "hidden";
+        }
+        else {
+            popup.style.visibility = "visible";
+        }
+        }
+</script>
+
+</body>
+</html>
