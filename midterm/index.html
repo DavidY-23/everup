@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Hololive</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+<body onload="listOfVtubers()">
+
+
+<div class="topnav">
+    <img src="images/hololiveicon.png" width="2%" style="float: left">
+    <a href="#home">Home</a>
+    <a href="#songs">Songs</a>
+    <a href="#EN">EN</a>
+    <a href="#characters">Characters</a>
+</div> 
+
+<div id="home">
+    <img src="images/hololive.png" id="homeimg">
+    <h1>What is Hololive?</h1>
+    <p>Hololive Production (Japanese: ホロライブプロダクション) is a virtual YouTuber agency owned by Japanese tech entertainment company Cover Corporation. In addition to acting as a multi-channel network, Hololive Production also handles merchandising especially in music production and concert organization. As of April 2022, the agency manages 68 VTubers between four regional branches totalling over 43 million subscribers, including several of the most subscribed VTubers on YouTube. </p>    
+    <p>Here is a current list of all the Japanese Hololive members!</p>
+    <ul id="vtuberList">
+    </ul>
+</div>
+
+<div id="songs">
+    <h1>Here are some original songs from them!</h1>
+    <iframe id="songVideo" width="420" height="315"
+    src="https://www.youtube.com/embed/Ud73fm4Uoq0">
+    </iframe> <br>
+    <button onclick = "nextVideo()">Click to get a random song!</button>
+</div>
+<br>
+<br>
+
+<div id="EN">
+    <div style="height: 50px; background-color: #84d6e2"></div>
+
+    <h1>What is Hololive EN?</h1>
+    <p>Hololive English (ホロライブEnglish, stylized as hololive English) is an all-girl VTuber group under COVER Corporation aimed at the English-speaking audience. Their activities include live streaming on platforms such as YouTube and interacting with fans on Twitter. The talents perform using intricate 2D avatars provided by the company. Unlike the Japanese and Indonesian branches, Hololive English does not name their groups by numbered generations to maintain fairness and avoid developing preconceptions about the prioritizing of the groups based on their numbers. Among fans, however, Myth and Council are commonly informally referred to as generations 1 and 2 respectively. All 11 talents are sorted by their groups. </p>
+    <div style="height: 50px; background-color: #84d6e2"></div>
+</div>
+
+<div id="characters">
+    <h1>Here are the current members of Hololive EN!</h1>
+    <select name="members" id="members" onchange="memberList()">
+    <option value="none">Choose a member!</option>
+      <option value="callie">Mori Calliope</option>
+      <option value="kiara">Takanashi Kiara</option>
+      <option value="ina">Ninomae Ina'nis</option>
+      <option value="gura">Gawr Gura</option>
+      <option value="ame">Watson Amelia</option>
+      <option value="irys">IRyS</option>
+      <option value="sana">Tsukumo Sana</option>
+      <option value="fauna">Ceres Fauna</option>
+      <option value="kronii">Ouro Kronii</option>
+      <option value="mumei">Nanashi Mumei</option>
+      <option value="bae">Hakos Baelz</option>
+    </select>
+  <div id="memberData">
+
+  </div>
+</div>
+<hr>
+
+<div id="feedback">
+    <h2>Any comments or questions? Feel free to send contact me below!</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" style="width: 90%"><br><br>
+        <label for="email" style="width: 90%">Email:</label><br>
+        <input type="text" id="email" name="email" style="width: 90%"><br><br>
+        <label for="msg">Message:</label><br>
+        <input type="text" id="msg" name="msg" style="height:200px; width: 90%"><br><br>
+    <button onclick="sendMessage()" style="background-color: grey;">Submit!</button>
+      </form>
+</div>
+<hr>
+<div id="footer">
+    <p>2022 Midterm Project - David Ye</p>
+</div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html> 
